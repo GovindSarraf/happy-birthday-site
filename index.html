@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>𝓗𝓪𝓹𝓹𝔂 𝓑𝓲𝓻𝓽𝓱𝓭𝓪𝔂!</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="./images-and-icons/favicon.svg">
+
+</head>
+
+<body>
+
+  <!-- LOCK -->
+  <div id="lock">
+    <div class="door left"></div>
+    <div class="door right"></div>
+  </div>
+
+  <div class="centerBtn">
+    <button onclick="openDoor()">🔒 Open</button>
+  </div>
+
+  <!-- POPUP -->
+  <div id="popup">
+    <div class="first-popup">
+      <span class="close" onclick="closePopup()">
+        <img src=".//images-and-icons/cross-svgrepo-com (1).svg" alt="cross icon">
+      </span>
+      <div class="popup-content">
+        <h3>Wishing you many happy returns of the day.
+          <br>
+          Happy birthday to my dear friend! 🎉
+        </h3>
+        <p>Another year, another start,<br>
+          May happiness fill your heart,<br>
+          Stay blessed, stay bright,<br>
+          May your future shine with light.</p>
+      </div>
+    </div>
+  </div>
+  <!-- ========== BANNER SLIDER ========== -->
+  <div class="banner-section">
+    <section class="slider">
+      <div class="slide active">
+        <img src="./images-and-icons/IMG-20260209-WA0001.jpg">
+      </div>
+      <div class="slide">
+        <img src="https://picsum.photos/1200/600?2">
+      </div>
+      <div class="slide">
+        <img src="https://picsum.photos/1200/600?3">
+      </div>
+    </section>
+
+    <!-- HERO -->
+    <section class="hero-content">
+      <h2>Happy Birthday to an Amazing Friend 💌</h2>
+      <p>Happy Birthday! 🥳 Congrats on leveling up again—your age is increasing, but your craziness is still perfectly
+        balanced 😂 May your cake be big, your gifts be better, and your problems stay as small as your attention span
+        today. Stay weird, stay fun, and don’t forget… calories don’t count on birthdays!</p>
+    </section>
+  </div>
+  <!-- HERO IMAGE -->
+  <div class="unique-hero">
+    <h2>Gallery</h2>
+    <img src="./images-and-icons/IMG-20260209-WA0152.jpg" id="uniqueMainHero" onclick="openUniquePopup()">
+    <div class="unique-count-btn" onclick="openUniquePopup()">View Photos</div>
+  </div>
+
+  <!-- POPUP WITH SCROLLABLE THUMBNAILS -->
+  <div class="unique-popup" id="uniquePopup">
+    <span class="unique-close-btn" onclick="closeUniquePopup()">✖</span>
+    <div class="unique-popup-thumbs" id="uniquePopupThumbs"></div>
+  </div>
+
+  <!-- LIGHTBOX FOR FULL IMAGE -->
+  <div class="unique-lightbox" id="uniqueLightbox">
+    <span class="unique-close-btn" onclick="closeUniqueLightbox()">✖</span>
+    <div class="unique-slider-nav">
+      <button onclick="prevUniqueImage()">❮</button>
+      <button onclick="nextUniqueImage()">❯</button>
+    </div>
+    <img id="uniqueLightImg">
+  </div>
+  <!-- VIDEOS -->
+  <h2>Tiktok Videos</h2>
+  <section class="reels">
+    <div class="video-box">
+      <video controls src="./images-and-icons/VID-20260209-WA0168.mp4"></video>
+    </div>
+    <div class="video-box">
+      <video controls src="./images-and-icons/VID-20260209-WA0168.mp4"></video>
+    </div>
+  </section>
+  <div class="tik-btn">
+    <a href="https://www.tiktok.com/@saney_166" alt="tiktok-btn" class="tiktok-btn">View More</a>
+  </div>
+  <!-- SOCIAL -->
+  <section class="social">
+    <h3>Follow Me 🌐</h3>
+    <a href="https://www.facebook.com/patel.queen.667016" class="social-icons facebook">
+      <img src=".//images-and-icons/facebook-svgrepo-com.svg" alt="facebook icon">
+      <h3>Facebook</h3>
+    </a>
+    <a href="https://www.instagram.com/sandhyapatel6101/" class="social-icons instagram">
+      <img src=".//images-and-icons/instagram-1-svgrepo-com.svg" alt="instagram icon">
+      <h3>Instagram</h3>
+    </a>
+    <a href="#" class="social-icons messenger">
+      <img src=".//images-and-icons/facebook-messenger-white-logo-svgrepo-com.svg" alt="messenger icon">
+      <h3>Messenger</h3>
+    </a>
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
